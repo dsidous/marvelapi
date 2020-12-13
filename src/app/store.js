@@ -1,8 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import marvelReducer from '../app/marvelSlice';
 
 export default configureStore({
   reducer: {
-    counter: counterReducer,
+    characters: marvelReducer,
   },
 });
